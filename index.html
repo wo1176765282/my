@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="http://at.alicdn.com/t/font_625706_61wgrtdm5597ldi.css">
+        <script src="js/jquery3.2.1.min.js"></script>
+        <title>Li</title>
+    </head>
+    <body>
+		<header>
+			<a name="headtext"></a>
+			<div class="head_text">Welcome to my personal home page!</div>
+			<!-- <span>欢迎来到我的个人主页</span> -->
+		</header>
+		<section class="about_me">
+		    <a name="MySelf"></a>
+			<div class="about_text">My Self</div>
+			<div class="about">
+				<div class="me"></div>
+				<div class="me_text">
+					<div class="text">
+						<span>Name</span>
+						<h2>李卓民</h2>
+					</div>
+					<div class="text">
+						<span>Sex</span>
+						<h2>Male</h2>
+					</div>
+					<div class="text">
+						<span>Hobby</span>
+						<h2>广泛</h2>
+					</div>
+					<div class="text">
+						<span>Phone Number</span>
+						<h2>18555558888</h2>
+					</div>
+					<div class="text">
+						<span>Email Address</span>
+						<h2>lzm@163.com</h2>
+					</div>
+					<!-- <h2>Name:</h2>
+					<h3>Sex:</h3>
+					<h4>Hobby:</h4>
+					<h5>Resume:</h5> -->
+				</div>
+			</div>	
+		</section>
+		<section class="skills">
+			<a name="Skills"></a>
+			<div class="skills_title">Skills</div>
+			<div class="skills_box">
+				<div class="skill">
+					<div class="skill1"></div>
+					<span>Web Design</span>
+				</div>
+				<div class="skill">
+					<div class="skill2"></div>
+					<span>HTML</span>
+				</div>
+				<div class="skill">
+					<div class="skill3"></div>
+					<span>css</span>
+				</div>
+			</div>
+		</section>
+		<section class="gif_img">
+			<div class="in_gif_img" style="background-position: 50% 60px;"></div>
+		</section>
+		<section class="web_design">
+			<a name="MyDesign"></a>
+			<span>My Design</span>
+			<div class="my_design">
+				<a href="https://wo1176765282.github.io/computer/" target="_blank">
+					<img src="img/design1.png"  alt="">
+				</a>
+				<a href="https://wo1176765282.github.io/phone/" target="_blank">
+					<img src="img/design2.png" alt="">
+				</a>
+				<a href="https://wo1176765282.github.io/vancl/" target="_blank">
+					<img src="img/design3.png" alt="">
+				</a>
+				<a href="https://wo1176765282.github.io/360/" target="_blank">
+					<img src="img/design4.png" alt="">
+				</a>
+				<a href="https://wo1176765282.github.io/tencent/" target="_blank">
+					<img src="img/design5.png" alt="">
+				</a>
+				<a href="https://wo1176765282.github.io/game/" target="_blank">
+					<img src="img/design6.png" alt="">
+				</a>
+			</div>
+		</section>
+		<footer>
+			<!-- <div class="footer_box">
+
+			</div> -->
+			<div class="icon">
+				<i class="iconfont icon-weixin-copy"></i>
+				<i class="iconfont icon-logo-weibo"></i>
+				<i class="iconfont icon-qq"></i>
+			</div>
+			<span>Copyright @ 2018.Company name All rights reserved</span>
+		</footer>
+		<!-- 跳转开始 -->
+		<div class="wrap">
+			<div class="bg">
+				<div class="click">
+					<div class="box">
+		                <span></span>
+		                <span></span>
+		                <span></span>
+		             </div>
+				</div>
+				<div class="block">
+					<a href="#headtext" class="home_wrap">Home</a>
+		            <a href="#MySelf" class="about_wrap">My Self</a>
+		            <a href="#Skills" class="skills_wrap">Skills</a>
+		            <a href="#MyDesign" class="design_wrap">My Design</a>
+		            <!-- <div class="icon"> -->
+						<i class="iconfont icon-weixin-copy"></i>
+						<i class="iconfont icon-logo-weibo"></i>
+						<i class="iconfont icon-qq"></i>
+					<!-- </div> -->
+				</div>
+
+			</div>
+		</div>
+		
+    </body>
+</html>
+<script>
+      // 单击事件
+	window.onload=function(){
+		$(".click").on("click",function(){
+			// 给.block添加一个类名
+			$(".block").addClass('hide');
+		})
+		$(".click").on("click",function(){
+			$(".click").addClass('hide');
+		})
+		// $(".home_wrap").on("click",function(){
+		// 	// self.head_text=head_text.html
+		// 	$(".head_text")
+		// })
+		// $(".about_wrap").on("click",function(){
+		// 	// self.about_me=about_me.html
+		// 	$.html(".about_me");
+		// })
+	}
+</script>
+<!-- // <script language="JavaScript">
+//           self.location='top.htm';
+//    </script> -->

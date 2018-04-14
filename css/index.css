@@ -1,0 +1,342 @@
+/*
+* @Author: 贝贝
+* @Date:   2018-04-10 13:41:36
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-04-13 15:22:23
+*/
+/* body{
+	background: #b2b2b2;
+} */
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+    vertical-align: middle;
+	border: 0;
+}
+body{
+	background: #e3e3e3;
+}
+header{
+	width: 100%;
+	height: 750px;
+	margin: 0 auto;
+	/* background: url('../img/header.jpg') no-repeat; */
+	background-size: cover;
+	animation: zhen 10s infinite;
+	display: block;
+}
+@keyframes zhen{
+	0%{
+		background: url('../img/header.jpg') no-repeat 0 0;
+	}
+	100%{
+		background: url('../img/header.jpg') no-repeat -420px 0;
+	}
+}
+.head_text{
+	line-height: 400px;
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+}
+.about_me{
+	width: 1140px;
+	height: 650px;
+	/* background: #000; */
+	margin: 5px auto;
+}
+.about_text{
+	text-align: center;
+	color: #000;
+	font-size: 42px;
+	line-height: 100px;
+}
+.about{
+	width: 1140px;
+	height: 500px;
+	/* background: red; */
+	/* padding-left: 105px;
+	padding-right: 105px; */
+	box-sizing: border-box;	
+}
+.me{
+	width: 430px;
+	height: 100%;
+	background: url('../img/me.jpg')no-repeat;
+	background-size: cover;
+	float: left;
+	box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.me_text{
+	width: 690px;
+	height: 100%;
+	background: #7ecef4;
+	float: right;
+	padding: 30px;
+	box-sizing: border-box;
+	box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.text{
+	width: 390px;
+	height: 70px;
+	border-bottom: 1px solid #5abcf5;
+}
+.text span{
+	display: block;
+	margin-top: 14px;
+	line-height: 28px;
+	font-size: 16px;
+	color: #efffff;
+}
+.text h2{
+	line-height: 24px;
+	color: #efffff;
+	font-size: 12px;
+	font-weight: normal;
+}
+.skills{
+	width: 1140px;
+	height: 500px;
+	background: #f6f6f6;
+	margin: 0 auto 10px;
+}
+.skills_title{
+	text-align: center;
+	color: #000;
+	font-size: 42px;
+	line-height: 180px;
+}
+.skills_box{
+	width: 1048px;
+	height: 297px;
+	/* background: blue; */
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.skill{
+	width: 287px;
+	height: 297px;
+	background: #f69737;
+	border-radius: 4px;
+}
+.skill1{
+	width: 76px;
+	height: 76px;
+	margin: 32px auto 41px;
+	background: url('../img/skill1.gif') no-repeat center;
+}
+.skill2{
+	width: 76px;
+	height: 76px;
+	margin: 32px auto 41px;
+	background: url('../img/skill2.gif') no-repeat center;
+}
+.skill3{
+	width: 76px;
+	height: 76px;
+	margin: 32px auto 41px;
+	background: url('../img/skill3.png') no-repeat center;
+}
+.skill span{
+	display: block;
+	width: 100%;
+	line-height: 56px;
+	font-size: 26px;
+	color: #fff;
+	text-align: center;
+}
+.gif_img{
+	width: 1140px;
+	height: 450px;
+	margin: 0 auto;
+	background-attachment: fixed;
+	/* position: absolute; */
+}
+.in_gif_img{
+	width: 1140px;
+	height: 450px;
+	background: url('../img/about-sep.jpg') no-repeat ;
+	margin: 0 auto;
+	background-size: cover;
+	background-attachment: fixed;
+	/* position: relative; */
+}
+.web_design{
+	width: 1111px;
+	height: 700px;
+	/* background: yellow; */
+	margin: 5px auto 0;
+}
+.web_design span{
+	display: block;
+	line-height: 105px;
+	text-align: center;
+	color: #000;
+	font-size: 42px;
+}
+.my_design{
+	width: 1111px;
+	height: 520px;
+	background: #e3e3e3;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.my_design a{
+	display: block;
+	width: 350px;
+	height: 233px;
+	/* background: green; */
+	transition: 0.5s;
+	margin-bottom: 27px;
+}
+.my_design a:hover{
+	box-shadow: 0 7px 7px 5px rgba(0, 0, 0, 0.5);
+}
+footer{
+	width: 100%;
+	height: 195px;
+	background: #000;	
+	overflow: hidden;
+}
+/* .footer_box{
+	width: 302px;
+	height: 52px;
+	background: red;
+	margin: 0 auto;
+} */
+.icon{
+	width: 95px;
+	height: 19px;
+	/* background: yellow; */
+	margin: 70px auto 0;
+	/* margin-top: 70px; */
+	display: flex;
+	justify-content: space-between;
+}
+footer .icon i{
+	display: block;
+	width: 16px;
+	height: 16px;
+	/* background: #333; */
+	color: #333;
+}
+.icon i:hover{
+	color: #eeb173;
+}
+footer span{
+	display: block;
+	width: 100%;
+	line-height: 34px;
+	font-size: 14px;
+	color: #888879;
+	text-align: center;
+}
+
+/* 跳转开始 */
+.wrap{
+	width: 342px;
+	height: 400px;
+	position: fixed;
+	right: 25px;
+	top: 140px;
+	z-index: 999;
+}
+.bg{
+	width: 342px;
+	height: 400px;
+	/* border: 1px solid #000; */
+	/* position: fixed;
+	right: 25px;
+	top: 140px;
+	z-index: 999; */
+	float: right;
+	/* 定位 */
+	position: relative;
+	/* 超出部分隐藏 */
+	overflow: hidden;
+}
+.click{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.5);
+	margin-left: 270px;
+	overflow: hidden;
+}
+.block{
+	width: 250px;
+	height: 100%;
+	background: #1a1a1a;
+	padding-left: 25px;
+	box-sizing: border-box;
+	position: absolute;
+	right: -250px;
+	top: 0;
+}
+
+
+.hide{
+	animation: dong 2s forwards;
+}
+@keyframes dong{
+	0%{
+      transform: translateX(0);
+	}
+	100%{
+      transform: translateX(-100px);
+	}
+}
+
+
+.box{
+
+	width: 17px;
+	height: 13px;
+	margin: 18px auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.box span{
+	display: block;
+	width: 17px;
+	height: 3px;
+	background: #fff;	
+}
+
+.block a{
+	display: block;
+	width: 100px;
+	font-size: 12px;
+	line-height: 50px;
+	color: #808080;
+}
+.block a:hover{
+	color: #fff;
+}
+.block a:first-child{
+	width: 60px;
+	font-size: 18px;
+	line-height: 78px;
+}
+.block i{
+	display: block;
+	width: 16px;
+	height: 16px;
+	color: #333;
+	margin-top: 20px;
+	margin-right: 5px;
+	float: left;
+}
+.block i:hover{
+	color: #eeb173;
+}
