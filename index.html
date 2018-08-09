@@ -46,6 +46,7 @@
 				</div>
 			</div>	
 		</section>
+		<!--个人技能开始-->
 		<section class="skills">
 			<a name="Skills"></a>
 			<div class="skills_title">Skills</div>
@@ -62,39 +63,68 @@
 					<div class="skill3"></div>
 					<span>css</span>
 				</div>
+				<div class="skill">
+					<div class="skill3"></div>
+					<span>js</span>
+				</div>
+				<div class="skill">
+					<div class="skill3"></div>
+					<span>jQuery</span>
+				</div>
+			</div>
+			<div class="skillsCon">
+				<div class="skillsBack">&lt;</div>
+				<div class="skillsNext">&gt;</div>
 			</div>
 		</section>
+		<!--个人技能结束-->
 		<section class="gif_img">
 			<div class="in_gif_img" style="background-position: 50% 60px;"></div>
 		</section>
+		<!--个人设计开始-->
 		<section class="web_design">
 			<a name="MyDesign"></a>
 			<span>My Design</span>
 			<div class="my_design">
-				<a href="https://wo1176765282.github.io/computer/" target="_blank">
+				<a href="https://wo1176765282.github.io/mi/" target="_blank">
 					<img src="img/design1.png"  alt="">
+					<div class="zz">
+						<img src="img/xiaomi.png" alt="" style="width: 70px;height: 70px;">
+					</div>
 				</a>
-				<a href="https://wo1176765282.github.io/phone/" target="_blank">
+				<a href="https://wo1176765282.github.io/suning/" target="_blank">
 					<img src="img/design2.png" alt="">
+					<div class="zz">
+						<img src="img/suning.jpg" alt="" style="width: 70px;height: 70px;">
+					</div>
 				</a>
 				<a href="https://wo1176765282.github.io/vancl/" target="_blank">
 					<img src="img/design3.png" alt="">
+					<div class="zz">
+						<img src="img/fanke.jpg" alt="" style="width: 70px;height: 50px;">
+					</div>
 				</a>
 				<a href="https://wo1176765282.github.io/360/" target="_blank">
 					<img src="img/design4.png" alt="">
+					<div class="zz">
+						<img src="img/360.jpg" alt="" style="width: 70px;height: 70px;">
+					</div>
 				</a>
 				<a href="https://wo1176765282.github.io/tencent/" target="_blank">
 					<img src="img/design5.png" alt="">
+					<div class="zz">
+						<img src="img/tengxun.png" alt="" style="width: 100px;height: 30px;">
+					</div>
 				</a>
 				<a href="https://wo1176765282.github.io/game/" target="_blank">
 					<img src="img/design6.png" alt="">
+					<div class="zz">
+						<img src="img/dazi.jpg" alt="" style="width: 70px;height: 60px;"></div>
 				</a>
 			</div>
 		</section>
+		<!--个人设计结束-->
 		<footer>
-			<!-- <div class="footer_box">
-
-			</div> -->
 			<div class="icon">
 				<i class="iconfont icon-weixin-copy"></i>
 				<i class="iconfont icon-logo-weibo"></i>
@@ -103,50 +133,50 @@
 			<span>Copyright @ 2018.Company name All rights reserved</span>
 		</footer>
 		<!-- 跳转开始 -->
-		<div class="wrap">
-			<div class="bg">
-				<div class="click">
-					<div class="box">
-		                <span></span>
-		                <span></span>
-		                <span></span>
-		             </div>
-				</div>
-				<div class="block">
-					<a href="#headtext" class="home_wrap">Home</a>
-		            <a href="#MySelf" class="about_wrap">My Self</a>
-		            <a href="#Skills" class="skills_wrap">Skills</a>
-		            <a href="#MyDesign" class="design_wrap">My Design</a>
-		            <!-- <div class="icon"> -->
-						<i class="iconfont icon-weixin-copy"></i>
-						<i class="iconfont icon-logo-weibo"></i>
-						<i class="iconfont icon-qq"></i>
-					<!-- </div> -->
-				</div>
-
+		<div class="click">
+			<div class="box">
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
 		</div>
-		
+		<div class="block">
+			<a href="#headtext" class="home_wrap">Home</a>
+			<a href="#MySelf" class="about_wrap">My Self</a>
+			<a href="#Skills" class="skills_wrap">Skills</a>
+			<a href="#MyDesign" class="design_wrap">My Design</a>
+			<i class="iconfont icon-weixin-copy"></i>
+			<i class="iconfont icon-logo-weibo"></i>
+			<i class="iconfont icon-qq"></i>
+		</div>
     </body>
 </html>
 <script>
-      // 单击事件
+      
 	window.onload=function(){
-		$(".click").on("click",function(){
-			// 给.block添加一个类名
-			$(".block").addClass('hide');
+        // 导航
+		$(".click").on("mouseenter",function(){
+			$(this).fadeOut()
+            $(".block").fadeIn()
 		})
-		$(".click").on("click",function(){
-			$(".click").addClass('hide');
-		})
-		// $(".home_wrap").on("click",function(){
-		// 	// self.head_text=head_text.html
-		// 	$(".head_text")
-		// })
-		// $(".about_wrap").on("click",function(){
-		// 	// self.about_me=about_me.html
-		// 	$.html(".about_me");
-		// })
+        $(".block").on("mouseleave",function(){
+            $(this).fadeOut()
+            $(".click").fadeIn()
+        })
+		$(window).scroll(function () {
+		    let top = $(this).scrollTop()
+			top>750 ? $(".click").fadeIn() : $(".click").fadeOut()
+        })
+		
+		//技能轮播
+        $(".skillsNext").click(function () {
+            $(".skills_box").css("left","-1140px")
+        })
+        $(".skillsBack").click(function () {
+            $(".skills_box").css("left","0")
+        })
+
+		
 	}
 </script>
 <!-- // <script language="JavaScript">
